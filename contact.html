@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+form{
+color: black;
+padding: 10px;
+text-align: center;
+}
+p{
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+p button a{
+color: white;
+}
+p a{
+  color: black;
+ 
+  text-align: center;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="message"],
+
+form{
+display:grid;
+place-items:center;
+}               
+body{
+background-image: url('https://i.pinimg.com/originals/af/e7/b9/afe7b90735c6b1726de086ad669056f8.jpg'); 
+background-size: cover; 
+background-position: absolute; 
+background-repeat: no-repeat;
+}
+   button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+   label {
+            font-weight: bold;
+        }
+</style>
+</head>
+<body>
+<p>
+Contact details are:</br>
+Phone number1:*********</br>
+phone number2:*********</br>
+</p>
+<p>If you have any questions, concerns, or feedback, please feel free to contact us.</p>
+
+  <form action="contact.php"method="post">
+    <table cellpadding="5" cellspacing="5">
+      <tr>
+        <td>
+
+          <label for="name">Name:</label>
+        </td>
+        <td>
+
+          <input type="text" id="name" name="name"></br></br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <label for="email">Email:</label>
+        </td>
+        <td>
+
+          <input type="email" id="email" name="email" ></br></br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <label for="message">Message:</label>
+        </td>
+        <td>
+
+          <textarea id="message" name="message" rows="4" ></textarea></br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <label for="">Phone No : </label>
+        </td>
+        <td>
+
+          <input type="text" name="contact" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+        </form>
+<p><button type="hover"><a href="blooddonor.html">Back to main</a></button></p>
+</body>
+</html>
+
+
+

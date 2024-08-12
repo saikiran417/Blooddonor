@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/af/e7/b9/afe7b90735c6b1726de086ad669056f8.jpg'); 
+            background-size: cover; 
+            background-position: absolute; 
+            background-repeat: no-repeat;
+            
+        }
+
+        header {
+            background-color: #FFCB9A;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #116466;
+            color: blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            color:red;
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blood Donor Website</h1>
+    </header>
+
+    <nav>
+        <a href="blood donor.php">Home</a>
+        <a href="About.php">About Us</a>
+        <a href="donateblood.php">Donate Blood</a>
+        <a href="finddonor.php">Find Donors</a>
+        <a href="Contact.php">Contact Us</a>
+    </nav>
+
+    <section >
+        <h2>Welcome to our Blood Donor Website</h2>
+        <p>This website aims to connect blood donors with those in need. Explore the various sections to find information about blood donation, how to donate, and how to find donors.</p>
+    </section><?php
+// Database connection parameters
+$servername = "localhost"; // Change this if your database server is different
+$username = "root"; // Default username for XAMPP MySQL
+$password = ""; // Default password for XAMPP MySQL
+$database = "blood donor"; // Change this to your database name
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+echo "Connected successfully";
+
+// Close connection
+$conn->close();
+?>
+
+
+
+</body>
+
+</html>
